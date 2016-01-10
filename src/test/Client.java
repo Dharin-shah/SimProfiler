@@ -18,6 +18,6 @@ public static void main(String abc[]){
 	sc = new Scanner(System.in);
 	sc.next();
 	
-	TimerSingle.getInstance().elaspedTime();
+	TimerSingle.getInstance().elapsedTime();
 }
 }

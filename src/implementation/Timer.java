@@ -39,7 +39,7 @@ public class Timer {
 	
 	//print out the elapsed time
     /**prints out time elapsed between init() and elapsedTime()*/
-	public void elaspedTime(){
+	public void elapsedTime(){
 		long temp = System.currentTimeMillis() - time;
 		System.out.println("Elasped Time Calculated is " + temp+"ms");
 	}
