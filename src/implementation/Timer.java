@@ -1,5 +1,6 @@
 package implementation;
-//laziest singleton model
+
+/**Laziest singleton model*/
 public class Timer {
 	private long time;
 	
@@ -27,17 +28,16 @@ public class Timer {
 		time = System.currentTimeMillis();
 	}
 	
+	/**returns current time in long*/
 	public long getTime(){
 		return time;
 	}
 	
-	//initialize timer
 	/**calls private function start() to start the timer*/
 	public void init(){  
 		start();
 	}
 	
-	//print out the elapsed time
     /**prints out time elapsed between init() and elapsedTime()*/
 	public void elapsedTime(){
 		long temp = System.currentTimeMillis() - time;
