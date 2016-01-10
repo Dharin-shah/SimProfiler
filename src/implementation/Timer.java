@@ -3,7 +3,7 @@ package implementation;
 public class Timer {
 	private long time;
 	
-	/* This takes advantage of language guarantees about class initialization, 
+	/** This takes advantage of language guarantees about class initialization, 
 	 * and will therefore work correctly in all Java-compliant compilers and 
 	 * virtual machines.*/
 	public static class TimerSingle {
@@ -11,7 +11,7 @@ public class Timer {
 		
 		public TimerSingle(){
 		}
-		
+		/** returns a single instance of Timer object*/
 		public static Timer getInstance(){
 			return TIMER;
 		}
@@ -32,11 +32,13 @@ public class Timer {
 	}
 	
 	//initialize timer
+	/**calls private function start() to start the timer*/
 	public void init(){  
 		start();
 	}
 	
 	//print out the elapsed time
+    /**prints out time elapsed between init() and elapsedTime()*/
 	public void elaspedTime(){
 		long temp = System.currentTimeMillis() - time;
 		System.out.println("Elasped Time Calculated is " + temp+"ms");
