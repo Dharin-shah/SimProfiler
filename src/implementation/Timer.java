@@ -1,6 +1,6 @@
 package implementation;
 
-/**Laziest singleton model*/
+/**Proactive singleton model*/
 public class Timer {
 	private long time;
 	
